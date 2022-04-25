@@ -25,8 +25,8 @@ param (
 if ($Authority -notmatch '^https:\/\/') {
     $Authority = "https://$Authority"
 }
-if (!(Import-Module ITGlueAPI -PassThru)) {
-    Install-Module -Name ITGlueAPI
+if (!(Import-Module ITGlueAPIv2 -PassThru)) {
+    Install-Module -Name ITGlueAPIv2
 }
 Add-ITGlueAPIKey -Api_Key $APIKey
 $APIKey = $null
