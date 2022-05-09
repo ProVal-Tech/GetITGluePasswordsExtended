@@ -2,7 +2,10 @@
 .SYNOPSIS
     Gets ITGlue passwords with one time password secrets!
 .EXAMPLE
-    $passwords = .\Get-ITGluePasswordsExtended.ps1
+    $passwords = .\Get-ITGluePasswordsExtended.ps1 `
+    -APIKey "ITG.abcdefg123456..." `
+    -Authority 'itg-api-prod-api-lb-us-west-2.itglue.com' `
+    -BearerToken 'Bearer usdifnbuidsfnbiusdfnbiusdnfb...'
     $passwords.attributes | Export-CSV -Path 'C:\temp\mypasswords.csv' -NoTypeInformation
 .PARAMETER APIKey
     An API key for ITGlue with password access.
