@@ -1,3 +1,6 @@
+# Defunct 😐
+ITGlue removed the ability to parse the OTP from their hidden API, thus this project is defunct. Keeping it public for posterity.
+
 # Overview
 Gets ITGlue passwords with one time password secrets!
 
